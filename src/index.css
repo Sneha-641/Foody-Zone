@@ -15,7 +15,7 @@ body, html {
   overflow-x: hidden;
 }
 
-h1,h3{
+h1,h3,h2 {
   color: #0d0d25;
   font-family: 'Playfair Display', serif;
 }

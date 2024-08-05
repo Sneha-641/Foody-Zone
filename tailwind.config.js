@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'prim': "#FF8243",
+      }
     },
   },
   plugins: [],

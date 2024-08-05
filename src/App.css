@@ -20,3 +20,20 @@
   transform: scale(1.05);
 }
 
+.custom_social{
+  width: 45px;
+  height: 45px;
+  display: inline-flex;
+  justify-items: center; 
+  align-items: center; 
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
+  color: #ff8243;
+  font-size: 19px;
+}
+
+.custom_social:hover{
+  background: #ff8243;
+  color: white;
+}
+

@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './pages/Navbar';
 import HomeBanner from './pages/HomeBanner';
 import CustomSlider from './pages/CustomSlider';
+import Footer from './pages/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar/>
       <HomeBanner/>
       <CustomSlider/>
+      <Footer/>
     </>
   );
 }

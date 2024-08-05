@@ -1,5 +1,3 @@
-// src/Slider.js
-
 import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -68,7 +66,7 @@ const CustomSlider = () => {
       <Slider {...settings}>
         {items.map(item => (
           <div key={item.id} className="py-4">
-            <div className="rounded-lg p-4 inline-flex flex-col justify-center items-center mr-4 custom_shadow">
+            <div className="rounded-lg p-4 inline-flex flex-col justify-center items-center mx-4 custom_shadow">
               <img src={item.image} alt={item.title} className="border-4 border-black rounded-full " />
               <div className="p-2">
                 <h3 className="text-lg font-semibold text-center">{item.title}</h3>
