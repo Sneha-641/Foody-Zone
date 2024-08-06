@@ -1,0 +1,38 @@
+/* coverflow.css */
+.coverflow-slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .coverflow-slide {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-style: preserve-3d;
+  }
+  
+  .coverflow-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .slick-center .coverflow-slide {
+    transform: scale(1.1) translateY(-20px);
+    z-index: 1;
+  }
+  
+  .slick-slide {
+    transform: scale(0.9);
+    z-index: 0;
+  }
+  
+  .slick-center .slick-slide {
+    transform: scale(1);
+    z-index: 1;
+  }
+  
+  .slick-center + .slick-slide,
+  .slick-center + .slick-slide + .slick-slide {
+    transform: scale(0.95);
+  }
+  
+  
