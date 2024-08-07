@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav_item{
+  transition: 0.3s;
+  padding: 5px 18px;
+  border-radius: 30px;
+}
+
+.nav_item:hover{
+  background: #f3f3f5;
+  box-shadow: inset 8px 8px 12px #e2e2e2, inset -8px -8px 12px #ffffff;
+}
+
 .search{
   box-shadow: inset 6px 6px 8px #dadada, inset -6px -6px 8px #ffffff;
   border: none;
@@ -61,5 +72,14 @@
 .subs_button:hover{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   transition: box-shadow 0.2s ease;
+}
+
+.headings{
+  box-shadow:  9px 9px 12px #e4e4e4, -9px -9px 12px #ffffff
+}
+
+.footer_bg{
+  background-color: #e6e8ec;
+  -webkit-tap-highlight-color: transparent;
 }
 

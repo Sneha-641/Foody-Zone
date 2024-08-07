@@ -1,0 +1,12 @@
+.blog_card{
+    padding: 30px 25px;
+    border-radius: 30px;
+    background: linear-gradient(145deg, #ececec, #fdfdfd);
+    /* box-shadow: 30px 30px 50px #dcdcdc, -30px -30px 50px #ffffff; */
+    transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
+    margin-bottom: 30px;
+  }
+  
+  .blog_card:hover{
+    transform: scale(1.03);
+  }

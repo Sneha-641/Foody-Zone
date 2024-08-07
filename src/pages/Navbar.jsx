@@ -14,13 +14,13 @@ const Navbar = () => {
         </div>
         <div className="justify-between flex space-x-16 items-center">
             <div>
-            <ul className="flex space-x-12 font-medium">
-                <li className="hover:text-prim cursor-pointer">Home</li>
-                <li className="hover:text-prim cursor-pointer">About</li>
-                <li className="hover:text-prim cursor-pointer">Menu</li>
-                <li className="hover:text-prim cursor-pointer">Gallery</li>
-                <li className="hover:text-prim cursor-pointer">Blog</li>
-                <li className="hover:text-prim cursor-pointer">Contact</li>
+            <ul className="flex space-x-4 font-medium">
+                <li className="hover:text-prim cursor-pointer nav_item">Home</li>
+                <li className="hover:text-prim cursor-pointer nav_item">Menu</li>
+                <li className="hover:text-prim cursor-pointer nav_item">About</li>
+                <li className="hover:text-prim cursor-pointer nav_item">Gallery</li>
+                <li className="hover:text-prim cursor-pointer nav_item">Blog</li>
+                <li className="hover:text-prim cursor-pointer nav_item">Contact</li>
             </ul>
             </div>
             <div className="flex space-x-4 items-center text-center">

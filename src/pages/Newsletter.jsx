@@ -1,9 +1,10 @@
 import React from 'react';
 import A1 from '../assets/brooke-lark-V4MBq8kue3U-unsplash.jpg';
+import A2 from '../assets/blog-pattern-bg.png';
 
 const Newsletter = () => {
   return (
-    <div className="mx-auto px-28 py-8">
+    <div className="mx-auto px-28 py-12" style={{backgroundImage: `url(${A2})`}}>
       <div className="flex">
         <div className="w-1/2 relative overflow-hidden" style={{
         backgroundImage: `url(${A1})` , backgroundSize: 'cover', backgroundPosition: 'center', padding: '1rem'}}>

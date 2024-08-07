@@ -2,9 +2,9 @@ import A2 from '../assets/mariana-medvedeva-iNwCO9ycBlc-unsplash.jpg';
 import A1 from '../assets/Home.jpg';
 import React from "react";
 import Slider from "react-slick";
-import "../styles/coverflow.css";
+import "../styles/gallery.css";
 
-const CoverflowSlider = () => {
+const Gallery = () => {
   const settings = {
     infinite: true,
     centerMode: true,
@@ -45,10 +45,13 @@ const CoverflowSlider = () => {
 
   return (
     <div className="coverflow-slider-container px-28 py-8">
-     <div><h1 className="text-3xl font-bold text-center mb-8">Our Gallery</h1></div>
-      <Slider {...settings}>
+     <div className="text-center">
+      <p className=" text-prim py-2 px-4 rounded-full inline-block mb-4 text-md bg-[#f3f3f5] headings">Gallery</p>
+      <h1 className="text-5xl text-dark font-[900] mb-8">Our Gallery</h1>
+     </div>
+      <Slider {...settings} className="p-4">
         {slides.map(slide => (
-          <div key={slide.id} className="coverflow-slide p-4">
+          <div key={slide.id} className="coverflow-slide p-2">
             <img src={slide.src} alt={slide.alt} className="coverflow-slide-image shadow-lg rounded-lg" />
           </div>
         ))}
@@ -57,4 +60,4 @@ const CoverflowSlider = () => {
   );
 };
 
-export default CoverflowSlider;
+export default Gallery;
