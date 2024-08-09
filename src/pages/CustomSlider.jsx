@@ -60,7 +60,7 @@ const CustomSlider = () => {
   };
 
   return (
-    <div className="container mx-auto px-28 py-8 mb-12">
+    <div className="mx-auto px-28 py-12">
       <h1 className="font-bold text-3xl p-2">Explore Our Menu</h1>
       <p className="p-2 w-1/2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad eveniet maiores doloribus eos amet cupiditate suscipit minima, ipsa </p>
       <Slider {...settings}>

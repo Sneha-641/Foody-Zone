@@ -97,7 +97,7 @@ const Menu = () => {
 
         {/* Title */}
          <div>
-           <p className=" text-prim py-2 px-4 rounded-full inline-block mb-4 text-md bg-[#f3f3f5] headings">About Us</p>
+           <p className=" text-prim py-2 px-4 rounded-full inline-block mb-4 text-md bg-[#f3f3f5] headings">Our Menu</p>
            <h1 className="text-5xl text-dark font-[900] mb-12 leading-tight">Wake Up Early,
            <br/>Eat Fresh & Healthy</h1>
          </div>
@@ -127,8 +127,8 @@ const Menu = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {filteredDishes.map(dish => (
           <div key={dish.id} className="mt-48 text-center bg-gradient-to-br from-gray-200 to-white rounded-3xl shadow-lg p-6 relative transition-transform transform hover:scale-105">
-            <div className="dist-img mb-6 absolute -top-32 left-20 ">
-              <img src={dish.imgSrc} alt={dish.title} className="inline-block justify-center items-center rounded-full shadow-md" />
+            <div className="mb-6 absolute left-20 -top-32">
+              <img src={dish.imgSrc} alt={dish.title} className=" rounded-full shadow-md" />
             </div>
             <div className="text-xl mt-32 mb-4">{dish.rating}
               <span className="text-prim ml-1"><FontAwesomeIcon icon={faStar} /></span>

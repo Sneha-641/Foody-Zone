@@ -7,7 +7,7 @@ import '../App.css';
 
 const Navbar = () => {
   return (
-    <div className="mx-auto px-28 py-8">
+    <div className="mx-auto px-28 py-12">
       <div className="flex justify-between p-2 items-center">
         <div>
             <img src={A1} alt="Logo" className="cursor-pointer"/>
