@@ -1,6 +1,9 @@
 # Foody Zone
 It is a dynamic website designed for food enthusiasts. It features a clean design and provides a rich user experience with visually appealing layouts and smooth navigation. The site highlights various cuisines, dishes, and restaurants, aiming to engage users with compelling content and intuitive design.
 
+## Live Demo 
+Check out the live demo of the Foody Zone website: [Link](https://foodyzonee.netlify.app/)
+
 ### Features
 1. **Modern Design**: Clean and aesthetically pleasing design tailored for food-related content.
 2. **Interactive Sliders**: Incorporates sliders for showcasing dishes, testimonials, and more.
