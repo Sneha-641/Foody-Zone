@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         'prim': "#FF8243",
         'dark': "#0d0d25",
+      },
+      fontFamily:{
+        'text': 'Playfair Display, serif',
       }
     },
   },

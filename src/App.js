@@ -5,9 +5,10 @@ import HomeBanner from './pages/HomeBanner';
 import CustomSlider from './pages/CustomSlider';
 import Footer from './pages/Footer';
 import Newsletter from './pages/Newsletter';
-import CustomflowSlider from './pages/Gallery';
+import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Publications from './pages/Publications';
+import Menu from './pages/Menu';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <HomeBanner/>
       <CustomSlider/>
       <About/>
-      <CustomflowSlider/>
+      <Menu/>
+      <Gallery/>
       <Publications/>
       <Newsletter/>
       <Footer/>

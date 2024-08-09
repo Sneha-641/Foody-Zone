@@ -16,8 +16,8 @@ const Navbar = () => {
             <div>
             <ul className="flex space-x-4 font-medium">
                 <li className="hover:text-prim cursor-pointer nav_item">Home</li>
-                <li className="hover:text-prim cursor-pointer nav_item">Menu</li>
                 <li className="hover:text-prim cursor-pointer nav_item">About</li>
+                <li className="hover:text-prim cursor-pointer nav_item">Menu</li>
                 <li className="hover:text-prim cursor-pointer nav_item">Gallery</li>
                 <li className="hover:text-prim cursor-pointer nav_item">Blog</li>
                 <li className="hover:text-prim cursor-pointer nav_item">Contact</li>
