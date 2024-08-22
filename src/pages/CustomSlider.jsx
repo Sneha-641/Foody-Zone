@@ -35,7 +35,7 @@ const CustomSlider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4.5,
           slidesToScroll: 1,
           infinite: true,
           dots: true
@@ -44,7 +44,7 @@ const CustomSlider = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2
         }
@@ -52,17 +52,17 @@ const CustomSlider = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1
         }
-      }
+      },
     ]
   };
 
   return (
-    <div className="mx-auto px-28 py-12">
+    <div className="mx-auto lg:px-28 py-8 md:px-12 px-4">
       <h1 className="font-bold text-3xl p-2">Explore Our Menu</h1>
-      <p className="p-2 w-1/2 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad eveniet maiores doloribus eos amet cupiditate suscipit minima, ipsa </p>
+      <p className="p-2 lg:w-[60%] md:w-full mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad eveniet maiores doloribus eos amet cupiditate suscipit minima, ipsa </p>
       <Slider {...settings}>
         {items.map(item => (
           <div key={item.id} className="mx-2">

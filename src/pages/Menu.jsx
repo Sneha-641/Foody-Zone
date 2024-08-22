@@ -93,7 +93,7 @@ const Menu = () => {
     // const filteredDishes = filter === 'all' ? dishes : dishes.filter(dish => dish.type.toLowerCase() === filter);
 
     return (
-    <div className="mx-auto px-28 py-12 text-center" style={{backgroundImage: `url(${bg})`}}>
+    <div className="mx-auto lg:px-28 py-12 text-center md:px-12" style={{backgroundImage: `url(${bg})`}}>
 
         {/* Title */}
          <div>
@@ -124,10 +124,10 @@ const Menu = () => {
 
 
         {/* Dishes Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-6">
         {filteredDishes.map(dish => (
           <div key={dish.id} className="mt-48 text-center bg-gradient-to-br from-gray-200 to-white rounded-3xl shadow-lg p-6 relative transition-transform transform hover:scale-105">
-            <div className="mb-6 absolute left-20 -top-32">
+            <div className="mb-6 absolute left-1/2 transform -translate-x-1/2 -top-24">
               <img src={dish.imgSrc} alt={dish.title} className=" rounded-full shadow-md" />
             </div>
             <div className="text-xl mt-32 mb-4">{dish.rating}
