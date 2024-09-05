@@ -96,10 +96,10 @@ const Publications = () => {
   ];
 
   return (
-    <div className="mx-auto lg:px-28 py-8 md:px-12" style={{ backgroundImage: `url(${A1})` }}>
+    <div className="mx-auto lg:px-28 py-8 md:px-12 px-4" style={{ backgroundImage: `url(${A1})` }}>
       <div className="text-center p-2">
         <p className="text-prim py-2 px-4 rounded-full inline-block mb-4 text-md bg-[#f3f3f5] headings">OUR BLOG</p>
-        <h1 className="text-5xl text-dark font-[900]">Latest Publications</h1>
+        <h1 className="md:text-6xl text-3xl text-dark font-[900]">Latest Publications</h1>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 space-x-4 mt-12">
         {publications.map((pub, index) => (

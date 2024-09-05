@@ -83,3 +83,50 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+@media only screen and (min-width: 1440px) {
+  .resp{
+    height: 498px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .resp{
+    height: 330px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resp{
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .resp{
+    height: 200px;
+  }
+}
+
+/* Hide full menu on screens between 1324px and 1024px */
+@media (max-width: 1324px) and (min-width: 1024px) {
+  
+  .navbar-full-menu {
+    display: none !important;
+  }
+  
+  .navbar-search,
+  .navbar-icons , .navbar-menu-icon{
+    display: flex !important;
+  }
+}
+
+/* Ensure full menu is visible on screens above 1324px */
+@media (min-width: 1325px) {
+  .navbar-full-menu {
+    display: flex;
+  }
+
+  .navbar-search,
+  .navbar-icons {
+    display: flex;
+  }
+}

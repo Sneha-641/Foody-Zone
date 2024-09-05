@@ -60,9 +60,9 @@ const CustomSlider = () => {
   };
 
   return (
-    <div className="mx-auto lg:px-28 py-8 md:px-12 px-4">
+    <div className="mx-auto lg:px-28 py-12 md:px-12 px-4">
       <h1 className="font-bold text-3xl p-2">Explore Our Menu</h1>
-      <p className="p-2 lg:w-[60%] md:w-full mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad eveniet maiores doloribus eos amet cupiditate suscipit minima, ipsa </p>
+      <p className="p-2 mb-4 md:text-lg text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad eveniet maiores doloribus eos amet cupiditate suscipit minima, ipsa </p>
       <Slider {...settings}>
         {items.map(item => (
           <div key={item.id} className="mx-2">

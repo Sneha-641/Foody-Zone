@@ -5,7 +5,7 @@ import {faFacebookF , faTwitter , faYoutube , faInstagram} from '@fortawesome/fr
 
 const Footer = () => {
   return (
-    <div className="mx-auto lg:px-28 py-8 mt-6 md:px-12 footer_bg border-t-2 border-[#cccccc66]">
+    <div className="mx-auto lg:px-28 py-8 mt-6 md:px-12 footer_bg border-t-2 border-[#cccccc66] px-4">
       <div className="flex flex-col lg:flex-row p-4 justify-between space-y-4 lg:space-y-0">
       <div className="lg:w-1/3 w-full flex flex-col ">
         <img src={A1} alt="Logo" className="lg:p-2 md:p-0 lg:my-4 w-48 md:my-0"/>

@@ -4,7 +4,7 @@ import A2 from '../assets/blog-pattern-bg.png';
 
 const Newsletter = () => {
   return (
-    <div className="mx-auto lg:px-28 py-12 md:px-12" style={{backgroundImage: `url(${A2})`}}>
+    <div className="mx-auto lg:px-28 py-12 md:px-12 px-4" style={{backgroundImage: `url(${A2})`}}>
       <div className="flex">
         <div className="w-1/2 relative overflow-hidden" style={{
         backgroundImage: `url(${A1})` , backgroundSize: 'cover', backgroundPosition: 'center', padding: '1rem'}}>
