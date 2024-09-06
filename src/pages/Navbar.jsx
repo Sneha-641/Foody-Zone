@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
-import { faBagShopping, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faBars, faTimes , faShoppingCart, } from '@fortawesome/free-solid-svg-icons';
 import A1 from '../assets/logo.png';
 import '../App.css';
 
@@ -41,16 +41,16 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
         
         {/* Search and Icons */}
         <div className="navbar-icons flex items-center space-x-4 md:space-x-2">
-          <form className="navbar-search hidden md:block">
+          {/* <form className="navbar-search hidden md:block">
             <input 
               type="search" 
               placeholder="Search Here..." 
               className="px-4 py-2 rounded-xl search w-[200px] h-[40px]" 
             />
-          </form>
+          </form> */}
           <div className="relative">
             <span 
-              className="w-[40px] h-[40px] text-prim rounded-md search inline-flex justify-center items-center cursor-pointer"
+              className="w-[40px] h-[40px] text-prim rounded-md search inline-flex justify-center items-center cursor-pointer hover:bg-prim hover:text-white "
               onClick={toggleCart}
             >
               <FontAwesomeIcon icon={faBagShopping} />
@@ -87,64 +87,62 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
       </div>
 
       {cartOpen && (
-  <div className="fixed top-0 right-0 bg-white shadow-lg p-8 w-[800px] h-full z-50">
-    <div className='flex justify-between mb-8 py-1 px-2'>
-    <h2 className="text-4xl font-bold text-center ">Cart Items</h2>
-    <button className="bg-prim text-white px-4 rounded-lg " onClick={toggleCart}>
-      <FontAwesomeIcon icon={faTimes} className="text-white" />
-    </button>
+  <div className="fixed top-0 right-0 bg-white shadow-lg p-4 sm:p-8 w-full h-full z-50">
+    <div className='flex justify-between mb-4 sm:mb-8 py-1 px-2'>
+      <h2 className="text-2xl sm:text-4xl font-bold text-center">Cart Items</h2>
+      <button className="bg-prim text-white px-2 sm:px-4 rounded-lg" onClick={toggleCart}>
+        <FontAwesomeIcon icon={faTimes} className="text-white" />
+      </button>
     </div>
     {cartItems.length === 0 ? (
-      <p>Your cart is empty.</p>
+      <p className='px-2 py-1 text-base sm:text-xl'>Your cart is empty.</p>
     ) : (
       <table className="table-auto w-full">
         <thead className='text-gray-800'>
           <tr>
-            <th className="text-center px-4 py-2 font-medium">Item</th>
-            <th className="text-center px-4 py-2 font-medium">Title</th>
-            <th className="text-center px-4 py-2 font-medium">Price</th>
-            <th className="text-center px-4 py-2 font-medium">Quantity</th>
-            <th className="text-center px-4 py-2 font-medium">Total</th>
-            <th className="text-center px-4 py-2 font-medium">Remove</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Item</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Title</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Price</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Quantity</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Total</th>
+            <th className="text-center px-2 sm:px-4 py-1 sm:py-2 font-medium">Remove</th>
           </tr>
         </thead>
         <tbody>
           {cartItems.map(item => (
-            <tr key={item.id} className="border-b" >
-              <td className="px-4 py-2 flex justify-center text-center">
-                <img src={item.imgSrc} alt={item.title} className="w-12 rounded-full shadow-md " />
+            <tr key={item.id} className="border-b">
+              <td className="px-2 sm:px-4 py-1 sm:py-2 flex justify-center text-center">
+                <img src={item.imgSrc} alt={item.title} className="w-10 sm:w-12 rounded-full shadow-md" />
               </td>
-              <td className="px-4 py-2 text-center">
-                <p className="font-semibold">{item.title}</p>
+              <td className="px-2 sm:px-4 py-1 sm:py-2 text-center">
+                <p className="font-semibold text-sm sm:text-base">{item.title}</p>
               </td>
-              <td className="px-4 py-2 text-center">
-                <p>Rs.&nbsp; {item.price}</p>
+              <td className="px-2 sm:px-4 py-1 sm:py-2 text-center">
+                <p className="text-sm sm:text-base">Rs.&nbsp;{item.price}</p>
               </td>
-              <td className="px-4 py-2 text-center">
-                <div className="flex justify-between">
-                  {/* Decrease quantity */}
+              <td className="px-2 sm:px-4 py-1 sm:py-2 text-center">
+                <div className="flex justify-center">
                   <button
-                    className="bg-gray-300 px-2 py-1 rounded  hover:bg-prim hover:text-white"
+                    className="bg-gray-300 px-2 py-1 rounded text-xs sm:text-base hover:bg-prim hover:text-white"
                     onClick={() => decreaseQuantity(item.id)}
                   >
                     -
                   </button>
-                  <p className="text-black px-2 py-1 font-medium">{item.quantity}</p>
-                  {/* Increase quantity */}
+                  <p className="text-black px-2 py-1 font-medium text-xs sm:text-base">{item.quantity}</p>
                   <button
-                    className="bg-gray-300 px-2 py-1 rounded hover:bg-prim hover:text-white"
+                    className="bg-gray-300 px-2 py-1 rounded text-xs sm:text-base hover:bg-prim hover:text-white"
                     onClick={() => increaseQuantity(item.id)}
                   >
                     +
                   </button>
                 </div>
               </td>
-              <td className="px-4 py-2 text-center">
-                <p>{(item.price * item.quantity).toFixed(2)}</p>
+              <td className="px-2 sm:px-4 py-1 sm:py-2 text-center">
+                <p className="text-sm sm:text-base">{(item.price * item.quantity).toFixed(2)}</p>
               </td>
-              <td className="px-4 py-2 items-center text-center">
+              <td className="px-2 sm:px-4 py-1 sm:py-2 items-center text-center">
                 <button
-                  className="border border-prim text-white w-8 h-8 rounded-full inline-block items-center justify-center text-center"
+                  className="border border-prim text-white w-6 sm:w-8 h-6 sm:h-8 rounded-full inline-block items-center justify-center text-center"
                   onClick={() => removeItem(item.id)}
                 >
                   <FontAwesomeIcon icon={faTimes} className="text-prim" />
