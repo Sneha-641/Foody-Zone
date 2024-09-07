@@ -66,8 +66,8 @@ const CustomSlider = () => {
       <Slider {...settings}>
         {items.map(item => (
           <div key={item.id} className="mx-2">
-            <div className="rounded-lg p-4 inline-flex flex-col justify-center items-center custom_shadow">
-              <img src={item.image} alt={item.title} className="border-4 border-black rounded-full " />
+            <div className="flex flex-col justify-center">
+              <img src={item.image} alt={item.title} className="border-4 border-black rounded-full mx-auto" />
               <div className="p-2">
                 <h3 className="text-lg font-semibold text-center">{item.title}</h3>
               </div>

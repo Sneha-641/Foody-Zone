@@ -30,12 +30,12 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
         {/* Full Menu for 1324px and above */}
         <div className="navbar-full-menu hidden lg:flex justify-between items-center space-x-16">
           <ul className="flex space-x-4 font-medium text-lg">
-            <li className="hover:text-prim cursor-pointer nav_item">Home</li>
-            <li className="hover:text-prim cursor-pointer nav_item">About</li>
-            <li className="hover:text-prim cursor-pointer nav_item">Menu</li>
-            <li className="hover:text-prim cursor-pointer nav_item">Gallery</li>
-            <li className="hover:text-prim cursor-pointer nav_item">Blog</li>
-            <li className="hover:text-prim cursor-pointer nav_item">Contact</li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#homeBanner">Home</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#about">About</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#menu">Menu</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#gallery">Gallery</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#blog">Blog</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
         

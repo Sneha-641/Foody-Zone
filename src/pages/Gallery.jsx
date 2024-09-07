@@ -44,7 +44,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="coverflow-slider-container lg:px-28 py-8 md:px-12 px-4">
+    <div className="coverflow-slider-container lg:px-28 py-8 md:px-12 px-4" id="gallery">
      <div className="text-center">
       <p className=" text-prim py-2 px-4 rounded-full inline-block mb-4 text-md bg-[#f3f3f5] headings">Gallery</p>
       <h1 className="md:text-6xl text-3xl text-dark font-[900] mb-8">Our Gallery</h1>

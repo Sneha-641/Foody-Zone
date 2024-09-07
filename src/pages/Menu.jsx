@@ -90,7 +90,7 @@ const Menu = ({addToCart}) => {
   const filteredDishes = dishes.filter(dish => activeFilter === '.all' || dish.category === activeFilter.replace('.', ''));
 
   return (
-    <div className="mx-auto lg:px-28 py-12 text-center md:px-12 px-4" style={{backgroundImage: `url(${bg})`}}>
+    <div className="mx-auto lg:px-28 py-12 text-center md:px-12 px-4" style={{backgroundImage: `url(${bg})`}} id="menu">
 
         {/* Title */}
          <div>

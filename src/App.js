@@ -9,6 +9,7 @@ import Gallery from './pages/Gallery';
 import About from './pages/About';
 import Publications from './pages/Publications';
 import Menu from './pages/Menu';
+import Companies from './pages/Companies';
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -60,6 +61,7 @@ function App() {
       <Menu addToCart={addToCart}/>
       <Gallery/>
       <Publications/>
+      <Companies/>
       <Newsletter/>
       <Footer/>
     </>
