@@ -14,7 +14,7 @@ const HomeBanner = () => {
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad voluptas non, aspernatur magnam incidunt eos dicta aut velit nulla?
                     </p>
                     <button type="submit" className="search custom_button p-4 md:h-[60px] md:w-[200px] rounded-3xl hover:text-prim hover:shadow-rose-900 w-full">
-                        Check Our Menu
+                        <a href="#menu">Check Our Menu</a>
                     </button>
                 </div>
                 <div className="w-full md:w-1/2 relative overflow-hidden resp">

@@ -28,7 +28,7 @@ const CustomSlider = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 7.5,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [
@@ -36,7 +36,7 @@ const CustomSlider = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 4.5,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           infinite: true,
           dots: true
         }
@@ -45,7 +45,7 @@ const CustomSlider = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           initialSlide: 2
         }
       },
@@ -53,7 +53,7 @@ const CustomSlider = () => {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2,
         }
       },
     ]

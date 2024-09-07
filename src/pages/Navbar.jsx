@@ -20,7 +20,7 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
   const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   return (
-    <div className="mx-auto lg:px-28 py-8 md:px-12 px-4">
+    <div className="mx-auto lg:px-28 pt-4 pb-2 md:px-12 px-4 fixed-navbar">
       <div className="flex justify-between p-2 items-center">
         {/* Logo */}
         <div>
