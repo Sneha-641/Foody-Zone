@@ -5,9 +5,9 @@ import '../App.css';
 const HomeBanner = () => {
     return (
         <div className="mx-auto lg:px-28 md:py-8 md:px-12 px-4 py-2" id="homeBanner">
-            <div className="flex flex-col md:flex-row items-center">
-                <div className="flex flex-col space-y-4 w-full md:w-1/2 p-4">
-                    <h1 className="xl:text-8xl font-bold md:text-5xl text-5xl">
+            <div className="flex flex-col-reverse md:flex-row items-center">
+                <div className="flex flex-col space-y-4 w-full md:w-1/2 p-2">
+                    <h1 className="xl:text-8xl font-bold md:text-6xl text-5xl">
                         Welcome to Our <span className="text-prim">Foody</span> Zone Cafe.
                     </h1>
                     <p className="xl:text-lg md:text-md text-gray-500 text-sm">

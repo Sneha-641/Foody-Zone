@@ -7,7 +7,7 @@ import b5 from '../assets/b5.png';
 
 const Companies = () => {
   return (
-      <div className='mx-auto lg:px-28 md:px-12 px-4 py-12'>
+      <div className='mx-auto lg:px-28 md:px-12 px-4 py-4'>
           <p className="md:text-2xl sm:text-xl font-text uppercase p-4 font-medium tracking-wider text-dark">Trusted by 20+ Companies</p>
           <div className="grid md:grid-cols-5 grid-cols-3 items-center justify-center ">
             <img src={b1} className=""/>

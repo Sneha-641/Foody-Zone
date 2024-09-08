@@ -24,13 +24,13 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
       <div className="flex justify-between p-2 items-center">
         {/* Logo */}
         <div>
-          <img src={A1} alt="Logo" className="cursor-pointer w-12 md:48" />
+          <img src={A1} alt="Logo" className="cursor-pointer w-24 h-8 md:h-12 md:w-48" />
         </div>
 
         {/* Full Menu for 1324px and above */}
         <div className="navbar-full-menu hidden lg:flex justify-between items-center space-x-16">
           <ul className="flex space-x-4 font-medium text-lg">
-            <li className="hover:text-prim cursor-pointer nav_item"><a href="#homeBanner">Home</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item"><a href="#">Home</a></li>
             <li className="hover:text-prim cursor-pointer nav_item"><a href="#about">About</a></li>
             <li className="hover:text-prim cursor-pointer nav_item"><a href="#menu">Menu</a></li>
             <li className="hover:text-prim cursor-pointer nav_item"><a href="#gallery">Gallery</a></li>
@@ -77,23 +77,24 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
       {/* Mobile Menu for 1024px and below */}
       <div className={`lg:hidden ${menuOpen ? 'block' : 'hidden'}`}>
         <ul className="flex flex-col items-center space-y-4 mt-4">
-          <li className="hover:text-prim cursor-pointer nav_item">Home</li>
-          <li className="hover:text-prim cursor-pointer nav_item">About</li>
-          <li className="hover:text-prim cursor-pointer nav_item">Menu</li>
-          <li className="hover:text-prim cursor-pointer nav_item">Gallery</li>
-          <li className="hover:text-prim cursor-pointer nav_item">Blog</li>
-          <li className="hover:text-prim cursor-pointer nav_item">Contact</li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#">Home</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#about">About</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#menu">Menu</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#gallery">Gallery</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#blog">Blog</a></li>
+            <li className="hover:text-prim cursor-pointer nav_item" onClick={toggleMenu}><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
-      {cartOpen && (
-  <div className="fixed top-0 right-0 bg-white shadow-lg p-4 sm:p-8 w-full h-full z-50">
-    <div className='flex justify-between mb-4 sm:mb-8 py-1 px-2'>
-      <h2 className="text-2xl sm:text-4xl font-bold text-center">Cart Items</h2>
-      <button className="bg-prim text-white px-2 sm:px-4 rounded-lg" onClick={toggleCart}>
+    {/* Cart Modal */}
+    {cartOpen && (
+    <div className="fixed top-0 right-0 bg-white shadow-lg p-4 sm:p-8 w-full h-full z-50">
+      <div className='flex justify-between mb-4 sm:mb-8 py-1 px-2'>
+        <h2 className="text-2xl sm:text-4xl font-bold text-center">Cart Items</h2>
+        <button className="bg-prim text-white px-2 sm:px-4 rounded-lg" onClick={toggleCart}>
         <FontAwesomeIcon icon={faTimes} className="text-white" />
-      </button>
-    </div>
+        </button>
+      </div>
     {cartItems.length === 0 ? (
       <p className='px-2 py-1 text-base sm:text-xl'>Your cart is empty.</p>
     ) : (
@@ -111,7 +112,7 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
         <tbody>
           {cartItems.map(item => (
             <tr key={item.id} className="border-b">
-              <td className="px-2 sm:px-4 py-1 sm:py-2 flex justify-center text-center">
+              <td className="px-0 sm:px-4 py-1 sm:py-2 flex justify-center text-center">
                 <img src={item.imgSrc} alt={item.title} className="w-10 sm:w-12 rounded-full shadow-md" />
               </td>
               <td className="px-2 sm:px-4 py-1 sm:py-2 text-center">
