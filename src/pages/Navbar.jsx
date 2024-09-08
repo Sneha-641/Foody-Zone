@@ -24,7 +24,7 @@ const Navbar = ({ cartItems, increaseQuantity, decreaseQuantity, removeItem }) =
       <div className="flex justify-between p-2 items-center">
         {/* Logo */}
         <div>
-          <img src={A1} alt="Logo" className="cursor-pointer w-48" />
+          <img src={A1} alt="Logo" className="cursor-pointer w-12 md:48" />
         </div>
 
         {/* Full Menu for 1324px and above */}
